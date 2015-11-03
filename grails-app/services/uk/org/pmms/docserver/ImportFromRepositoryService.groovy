@@ -1,7 +1,6 @@
 package uk.org.pmms.docserver
 
 import grails.transaction.Transactional
-import grails.util.Holders as CH
 @Transactional
 class ImportFromRepositoryService {
 	
@@ -9,7 +8,7 @@ class ImportFromRepositoryService {
 	def grailsApplication
 	
     def importTemplates() {
-		def templateFiles = CMISService.getQueryResults("select cmis:objectId, cmis:description, cmis:name from cmis:document where in_folder('" + CH.config.grails.alfresco.repo.templatefolder +"')")
+		def templateFiles = CMISService.getQueryResults("select cmis:objectId, cmis:description, cmis:name from cmis:document where in_folder('" + grailsApplication.config.grails.alfresco.repo.templatefolder +"')")
 		println templateFiles
 		println templateFiles.size()
 		def templateSize = templateFiles.size()
