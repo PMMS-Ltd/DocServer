@@ -125,7 +125,7 @@ grails.opencmis.alfresco.cmisurl='cmis/versions/1.1/atom'
 grails.opencmis.alfresco.atomurl='http://alfresco.pmms.org.uk/alfresco/api/-default-/public/cmis/versions/1.1/atom'
 //grails.opencmis.alfresco.atomurl='http://192.168.0.15/alfresco/api/-default-/public/cmis/versions/1.1/atom'
 grails.opencmis.alfresco.user='user'
-grails.opencmis.alfresco.password='bitnami'
+grails.opencmis.alfresco.password='Himson19155'
 
 grails.alfresco.repo.templatefolder = 'c9580f86-373c-4e0c-8597-7e7efdf9bd88'
 grails.alfresco.vtiURL = 'http://alfresco.pmms.org.uk:7070/alfresco'
@@ -134,5 +134,5 @@ pmms {
 		user = 'jlee'
 		password = 'Jonlee2001'
 	}
-	apiUrl = "http://apps.pmms.org.uk/PMMS/api/"
+	apiUrl = "http://uat.pmms.org.uk/PMMS/api/"
 }

@@ -13,12 +13,12 @@ class MailMergeController {
 	}
 	def merge() {
 		System.out.println request.JSON
-		/*if(request.JSON != null){
+		if(request.JSON != null){
 			System.out.println request.JSON
 			params << request.JSON
 		}
 		//println params
-		String templatePath = params.templatePath ? params.templatePath : "c:\\Projects\\docx-template\\Apportionment.docx"
+		String templatePath = params.templatePath
 		
 			   
 			   byte[] mergedOutput = docxDocumentMergerAndConverterService.mergeAndGenerateOutput(templatePath, TemplateEngineKind.Freemarker, params.fields);
@@ -31,7 +31,7 @@ class MailMergeController {
 			   	response.outputStream << mergedOutput
             }
             '*' {  render mergedOutput.encodeBase64() }
-        }*/
+        }
 			   
 	}
 	def mergePDF() {

@@ -59,14 +59,14 @@ grails.project.dependency.resolution = {
 		//compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.template.velocity:0.9.8'
 		//compile 'org.xhtmlrenderer:flying-saucer-pdf:9.0.6'
 		
-		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.core:1.0.5'
-		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.document:1.0.5'
-		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.document.docx:1.0.5'
-		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.converter:1.0.5'
-		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.converter.docx.xwpf:1.0.5'
-		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.template.freemarker:1.0.5'
-		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.template.velocity:1.0.5'
-		compile 'org.xhtmlrenderer:flying-saucer-pdf:9.0.7'
+		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.core:1.0.6'
+		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.document:1.0.6'
+		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.document.docx:1.0.6'
+		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.converter:1.0.6'
+		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.converter.docx.xwpf:1.0.6'
+		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.template.freemarker:1.0.6'
+		compile 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.template.velocity:1.0.6'
+		compile 'org.xhtmlrenderer:flying-saucer-pdf:9.1.5'
 		 //compile 'org.xhtmlrenderer:core-renderer:R8pre2'
 		// compile 'com.lowagie:itext:2.1.7'
 		 compile ('org.docx4j:docx4j:3.2.1') {excludes "slf4j-log4j12", "xml-apis", "commons-logging"}
@@ -100,6 +100,7 @@ grails.project.dependency.resolution = {
         // plugins for the compile step
         compile ":scaffolding:2.0.3"
         compile ':cache:1.1.2'
+		compile ":executor:0.3"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.13" // or ":hibernate4:4.3.5.1"

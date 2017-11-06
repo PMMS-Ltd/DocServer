@@ -10,7 +10,7 @@ class UrlMappings {
 		"/api/mergePDF" (controller: "mailMerge", action: "mergePDF", parseRequest: true)
 		"/api/mergeSave" (controller: "mailMerge", action: "mergeSave", parseRequest: true)
 		"/api/template/$id/render-form" (controller:"templates", action: "renderMergeForm", parseRequest: true)
-		"/api/batch" (resources: "batch")
+		"/api/batch" (resources: "batch", parseRequest: true)
         "/"(view:"/index")
         "500"(view:'/error')
 	}
