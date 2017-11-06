@@ -4,7 +4,6 @@ class Batch {
 
 	String batchName
 	String status = 'New'
-	Long templateId
 	
 	Date dateCreated
 	Date lastUpdated

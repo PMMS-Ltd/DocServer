@@ -115,6 +115,7 @@ class TemplatesController {
             '*'{ render status: NOT_FOUND }
         }
     }
+	@Transactional
 	def importTemplates(){
 		ImportFromRepositoryService.importTemplates();
 		redirect action: "index"
